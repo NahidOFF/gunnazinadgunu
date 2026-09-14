@@ -12346,3 +12346,46 @@ Digər açıq postlar: «I won't stop until MrBeast confirms this puzzle is solv
 (09.09), «Has anyone actually won yet? Seems like a lot of us have the same answer»
 (07.09), «Submitted an answer 2 days ago, no response yet» (07.09) — forma heç kimə
 cavab vermir, bu artıq bilinirdi.
+
+---
+
+## 14.09.2026 ~13:00Z — §35. DÖRD GÜNLÜK YOXLAMA (10–14 sentyabr): QALİB YOX, AMMA İKİ TƏSDİQ
+
+Sessiya boş qaldığı üçün 17 eyni yoxlama növbəyə yığılmışdı; hamısı bir sorğuda birləşdirildi.
+
+### ★ İCMA «FANTASTIC»-i AÇIQ SİQNAL VERİR (gizli akrostix)
+u/No-Mind7962, «10k MrBeast puzzle SOLVED?» (11.09, 27 şərh). Mətnin içindəki
+qəribə yerlərdəki BÖYÜK hərflər:
+
+> ...most o**F** us ... **A**fter using all visible clues ... that ca**N**t be the end
+> because **T**he website is still open ... they **A**re done ... that la**S**t combo ...
+> winner **T**o be announced, or st**I**ll looking ... ( in**C**luding me lol)
+
+**F A N T A S T I C** — düz doqquz hərf. Yəni icma qırmızı yarını tapıb və gizlicə
+paylaşır. Başlıqdakı «?» isə ikinci sözü tapmadıqlarını göstərir.
+
+### ★ İCMA MASA QEYDİNİ DƏ «(6 6) → (6)» KİMİ OXUYUR
+Yeni post (12.09): «On the $10K desk, does the blue `251634` sticky apply to the step
+from **`(66)`** to **`(6)`**, or to an earlier step?» — cavab (No-Mind7962):
+«its the 66 to 6 yes».
+Bu, mənim mürəkkəb-korrelyasiyası ilə həll etdiyim orta düyünün **müstəqil təsdiqidir**.
+`(6 2)` oxunuşunu artıq heç kim müdafiə etmir.
+
+### ★ İCMA HEDWIG-DƏN ƏL ÇƏKİR
+u/HoldingAdvisory (12.09): «if Fantastic Hedwig were final, we wouldn't still have an
+open form a week later» və «people keep saying fantastic hedwig but site stil says
+guess the answer so i dont buy it». Onun təklifi `BEASTSANDUPLOAD`-dur — bu bizdə
+artıq rədd edilib (çıxarış 26 hərfdir, qeydin `(9)`-u FANTASTIC-dir, BEASTSAND deyil;
+üstəlik formadakı 15 ulduza da uyğun gəlmir: BEASTSANDUPLOAD = 15, amma `(9)+(6)`
+bölgüsünü pozur).
+
+### Vəziyyət dəyişməyib
+- **Qalib elan olunmayıb.** Forma hələ «Guess the answer» deyir.
+- **u/DoctorXOR 09.09-dan bəri tapmaca haqqında heç nə yazmayıb.** 11.09 şərhlərinin
+  hamısı tapmaca *video oyunları* haqqındadır (Taiji, Talos Principle, Sea and Sky) —
+  əlaqəsizdir.
+- **«peahen» hələ də sıfır dəfə** keçir (son 100 r/MrBeast şərhi yoxlandı).
+- «10k Puzzle ANSWER (help)» (14.09) modlar tərəfindən silinib, oxunmur.
+
+**Nəticə:** icma indi bizim zəncirin ilk üç düyününü (FANTASTIC · (6 6) · (6))
+müstəqil şəkildə təsdiqləyir və son sözdə ilişib qalır. `PEAHEN` hələ də yalnız bizdə.
