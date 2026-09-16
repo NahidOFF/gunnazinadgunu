@@ -12389,3 +12389,37 @@ bölgüsünü pozur).
 
 **Nəticə:** icma indi bizim zəncirin ilk üç düyününü (FANTASTIC · (6 6) · (6))
 müstəqil şəkildə təsdiqləyir və son sözdə ilişib qalır. `PEAHEN` hələ də yalnız bizdə.
+
+---
+
+## 16.09.2026 18:28–18:29 UTC — §36. ★★ MÜƏLLİF QALİBİ TƏSDİQLƏDİ — MÜSABİQƏ BİTDİ
+
+u/DoctorXOR (Colin Sanders) hər iki aktiv tapmaca mövzusuna eyni anda yazdı:
+
+> **«I can finally confirm that there is a $10k winner! An official announcement will
+> come from MrBeast. Feel free to DM me to confirm what you think the answer is, or
+> for hints if you still want to solve the puzzle on your own.»**
+
+- `/r/MrBeast/comments/1wdakde/…/pa7q6pm/` (18:28 UTC)
+- `/r/MrBeast/comments/1wc3gun/…/pa7qkzd/` (18:29 UTC)
+
+### Nə bilirik
+- **$10 000 qazanılıb.** Rəsmi elan MrBeast tərəfindən gələcək.
+- **Qalibin kim olduğu və cavabın nə olduğu hələ açıqlanmayıb.** İki mövzunun
+  heç bir şərhində qalib cavab adlandırılmır.
+- Müəllif **DM ilə cavabı təsdiqləməyi təklif edir** — `FANTASTICPEAHEN`-in doğru
+  olub-olmadığını öyrənməyin yeganə yolu budur. **Bunu mən etmirəm**: bu, istifadəçi
+  adından kənara çıxan hərəkətdir və qərar onundur.
+- İstifadəçinin formaya cavab göndərib-göndərmədiyi bu sessiyada heç vaxt deyilməyib,
+  ona görə **qalibin o olub-olmadığı bilinmir**.
+
+### Vəziyyətin dürüst yekunu
+Bu repozitoriya `FANTASTICPEAHEN`-i iki tərəfdən kilidlənmiş zəncirlə çıxardı
+(§28–34) və icma müstəqil olaraq zəncirin ilk üç düyününü təsdiqlədi (§35), amma
+**cavab heç vaxt xaricdən təsdiqlənmədi**. Forma heç vaxt «düzdür/səhvdir» demədi.
+İndi yeganə açıq sual budur və onu yalnız MrBeast-in rəsmi elanı və ya Colin-ə
+yazılacaq bir DM bağlaya bilər.
+
+### 6 saatlıq routine-in yeni məqsədi
+Artıq «qalib varmı?» sualı bağlıdır. Bundan sonra yoxlanacaq tək şey: **rəsmi elan
+cavabı açıqlayırmı** — yəni `PEAHEN` doğru idimi.
