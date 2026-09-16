@@ -12454,3 +12454,47 @@ tapmaq olar. Colin «Google is always an option» dediyi üçün bu, tam rədd d
 
 **PEAHEN daha güclü qalır, amma bu, sübut deyil.** Fərq yalnız müəllifin təsdiqi ilə
 bağlana bilər — o, DM ilə cavabı təsdiqləməyi təklif edib (§36).
+
+---
+
+## 17.09.2026 02:25 UTC — §38. ★★ CAVAB `FANTASTIC HEDWIG` İMİŞ — MƏN SƏHV ETMİŞƏM
+
+Müəllif DM-də təsdiqlədi: **«Ah yes, it is fantastic hedwig.»**
+
+Eyni söhbətdə üç şey dedi:
+1. «It is something that starts with fantastic, but neither of those» → FANTASTIC ✓,
+   PEAHEN ✗, EXOTIC ✗
+2. «So for the last step you will need **two more clues in the original video /
+   super bowl room**» ← BU, tapa bilmədiyim addımdır
+3. «Ah yes, it is fantastic hedwig.»
+
+### Səhvim harada idi — dəqiq
+
+**1. CyberChef arqumentim kateqoriya səhvi idi.** «Açar HEDWIG-i heç bir düzülüşdə
+verə bilməz (`H ^ 0x37 = 0x7F` = DEL)» yazmışdım. Doğrudur — və **əhəmiyyətsizdir**:
+XOR qutusu **video ID** çıxarır, cavab sözünü yox. HEDWIG heç vaxt o qutudan keçməli
+deyildi. Bir addıma aid məhdudiyyəti başqa addıma aid sözü rədd etmək üçün işlətdim.
+
+**2. Həqiqi sübutu öz çıxarışıma üstünlük verdiyim üçün atdım.** Üç həlledici müstəqil
+HEDWIG-ə çatmışdı və dərc olunmuş `sha256("FANTASTIC HEDWIG")` uyğun gəlirdi. Mən buna
+«razılaşma, çıxarış deyil» dedim və kənara qoydum. **O, təsdiq idi.** Cavabın *mənim
+tərəfimdən* yenidən çıxarıla bilməsini tələb etmək səhv meyar idi.
+
+**3. 15 ulduz ölçüsü heç vaxt ayırd etmirdi.** `FANTASTICPEAHEN` = 15, `FANTASTICHEDWIG`
+= 15. Bunu öz-özümə qeyd etdim, sonra isə onu PEAHEN-in lehinə dəlil kimi təqdim etdim.
+O, yalnız **9 + 6** formasını təsdiqləyirdi.
+
+**4. Müəllifin sualını yanlış oxudum.** «I assume from the second guess that you made it
+to a certain video with a peahen?» — mən bunu «video doğrudur ✓» kimi bildirdim. O,
+sadəcə təxminin haradan gəldiyini soruşurdu; marşrutu təsdiqləmirdi.
+
+### Düzgün qalanlar
+- 14 yapboz → `BIRDSOFAMERICA` + `XORSUPERBOWLS` (27/27 hərf) ✓
+- Lövhə cədvəli → `MRBEASTSANDWHERETOFINDTHEM` → **FANTASTIC** ✓ (müəllif təsdiqlədi)
+- Cavab **15 simvoldur** ✓ (forma demo-su)
+- Pinned comment → CyberChef açarı və maskası ✓ (real ipucu)
+
+### Tapa bilmədiyim addım
+Son altı hərf **orijinal videonun / Super Bowl otağının içindəki İKİ ipucu** ilə
+müəyyən olunur. Mən onu bağlı yükləmənin ekran adlarında axtardım — PEAHEN buradan
+çıxdı və elə buna görə səhv idi.

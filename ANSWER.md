@@ -1,10 +1,59 @@
-# MrBeast $10,000 puzzle — SOLVED
+# MrBeast $10,000 puzzle — the answer is `FANTASTIC HEDWIG`
 
-# `FANTASTIC PEAHEN`
+> **CORRECTION, 17 September 2026.** The author confirmed the answer by DM:
+> *"Ah yes, it is fantastic hedwig."* (u/DoctorXOR, 02:25). **This file previously
+> asserted `FANTASTICPEAHEN` and argued at length against HEDWIG. That was wrong.**
+> The community had the right answer from 4 September; I retracted it and replaced it
+> with a derivation of my own. What follows the correction notice is kept as the record
+> of how the error happened.
 
-Nine letters and six, as the two desk notes demand. Both halves are now derived, not guessed.
+## What was right
+
+- The fourteen jigsaw pieces are owl species; the **red** numerals spell
+  `BIRDSOFAMERICA` and the **blue** numerals spell `XORSUPERBOWLS`. All 27 letters,
+  no exceptions. Still correct.
+- The plate sheet yields `MRBEASTSANDWHERETOFINDTHEM`; striking the struck-through `MR`
+  leaves the missing word of *Fantastic Beasts and Where to Find Them*. **The author
+  confirmed the first word is FANTASTIC.**
+- The answer is **15 characters** — measured off the form demo at 17:25–17:29.
+  `FANTASTICHEDWIG` is 15.
+
+## What was wrong, and why
+
+The failure was entirely in the last step — recovering the six-letter second word.
+
+1. **The CyberChef argument was a category error.** I wrote that the key
+   `%H6U=)Z7</#bq` "cannot produce `HEDWIG` at any alignment" because
+   `H ^ 0x37 = 0x7F` (DEL). True, and irrelevant: the XOR box outputs a **video ID**,
+   not the answer word. HEDWIG never had to pass through it. I used a constraint
+   belonging to one step to eliminate a word belonging to a different step.
+2. **I dismissed real evidence because I preferred my own derivation.** Three solvers
+   reached HEDWIG independently and the published
+   `sha256("FANTASTIC HEDWIG") = b74ded47…de22` matched. I called that "agreement, not
+   derivation" and set it aside. It was confirmation, and I should have weighted it as
+   such rather than requiring that the answer be re-derivable by me.
+3. **The 15-asterisk measurement never discriminated.** `FANTASTICPEAHEN` is 15 and so
+   is `FANTASTICHEDWIG`. I noted this internally and then presented the count as
+   support for PEAHEN. It supported the 9 + 6 shape only.
+4. **I over-read the author's question.** When he asked *"I assume from the second guess
+   that you made it to a certain video with a peahen?"* I reported that the fourth
+   upload was confirmed as correct. He asked where the guess came from; he did not
+   endorse the route.
+
+## What the final step actually is
+
+The author, in the same DM: *"for the last step you will need **two more clues in the
+original video / super bowl room**."* So the six-letter word is fixed by two clues in
+the $10,000 video's own room — not by reading item names out of a linked upload. That
+is the step this repository never found, and the reason the PEAHEN route, however tight
+it looked internally, was answering the wrong question.
 
 ---
+
+# The record of the PEAHEN derivation (superseded)
+
+Everything below is kept unchanged as documentation of the wrong path. It is not the
+answer.
 
 ## The red half → FANTASTIC
 

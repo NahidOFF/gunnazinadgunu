@@ -1,20 +1,39 @@
 # HANDOFF — MrBeast $10,000 puzzle
 
-## Answer: `FANTASTICPEAHEN`
+## Answer: `FANTASTIC HEDWIG`
 
-**Submit it unspaced, exactly 15 characters.** At 17:25–17:29 the video shows the entry
-form being filled in, and the typing animation puts **exactly 15 asterisks** in the answer
-box — it counts 1…15 and stops (measured at 1080p/30 fps: 15 glyphs, x = 594→1267, 45.4 px
-pitch, stable across frames 141–153). `FANTASTICPEAHEN` is 15; `FANTASTIC PEAHEN` with the
-space is 16. If it is rejected, try it with the space, then the reversed order.
+Confirmed by the puzzle's author, u/DoctorXOR, by DM on 17 September 2026:
+*"Ah yes, it is fantastic hedwig."* He also confirmed the contest already has a winner
+(16 September, 18:28), with MrBeast to announce officially.
 
-Nine letters and six, which is exactly what the two desk notes demand. Both halves are
-derived, not guessed. Full write-up in `ANSWER.md`; running log in
-`MRBEAST_PUZZLE_NOTES.md` (§28–34 are this stretch of work).
+**This handoff previously said `FANTASTICPEAHEN`. That was wrong.** The community had
+HEDWIG from 4 September; this repository retracted it and substituted a derivation of
+its own, which reached the wrong word. `ANSWER.md` opens with the correction and the
+four specific reasoning errors; the superseded derivation is kept below the fold there
+as a record.
+
+## What still stands
+
+- Fourteen jigsaw pieces are owl species; red numerals spell `BIRDSOFAMERICA`, blue
+  numerals spell `XORSUPERBOWLS` — 27 of 27 letters, verified.
+- The plate sheet yields `MRBEASTSANDWHERETOFINDTHEM`; strike `MR` and the missing word
+  of *Fantastic Beasts and Where to Find Them* is **FANTASTIC** — the author confirmed
+  this is the first word.
+- The answer is **15 characters**, measured off the form demo at 17:25–17:29
+  (the typing animation counts 1…15 and stops). `FANTASTICHEDWIG` is 15.
+- The pinned comment's CyberChef link is real: key `%H6U=)Z7</#bq`, mask
+  `AaaaaA-aaAa##`.
+
+## The step this repository never found
+
+The author: *"for the last step you will need two more clues in the original
+video / super bowl room."* The six-letter second word is fixed by two clues in the
+$10,000 video's own room. This repo instead chased the word through a linked upload's
+on-screen item names, which is why it landed on PEAHEN.
 
 ---
 
-## The derivation
+# The superseded derivation (kept as a record)
 
 ### Red half → `FANTASTIC`
 
