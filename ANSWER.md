@@ -1,11 +1,18 @@
 # MrBeast $10,000 puzzle — the answer is `FANTASTIC HEDWIG`
 
-> **CORRECTION, 17 September 2026.** The author confirmed the answer by DM:
+> **CLOSED, 17 September 2026.** The author confirmed the answer by DM:
 > *"Ah yes, it is fantastic hedwig."* (u/DoctorXOR, 02:25). **This file previously
 > asserted `FANTASTICPEAHEN` and argued at length against HEDWIG. That was wrong.**
 > The community had the right answer from 4 September; I retracted it and replaced it
 > with a derivation of my own. What follows the correction notice is kept as the record
 > of how the error happened.
+>
+> **The contest was already over before any of this work began.** The author, same
+> conversation: *"It was solved VERY fast. Within the first 12 hours."* The video went
+> up on 2 September; the winner was decided that day. The entry form stayed open because
+> it is Team Beast's site, not the author's, and the announcement was delayed by legal
+> paperwork, a federal holiday and the launch of the new $1,000,000 James Patterson book
+> challenge. The author has given permission to share the answer publicly.
 
 ## What was right
 

@@ -12498,3 +12498,55 @@ sadəcə təxminin haradan gəldiyini soruşurdu; marşrutu təsdiqləmirdi.
 Son altı hərf **orijinal videonun / Super Bowl otağının içindəki İKİ ipucu** ilə
 müəyyən olunur. Mən onu bağlı yükləmənin ekran adlarında axtardım — PEAHEN buradan
 çıxdı və elə buna görə səhv idi.
+
+---
+
+## 17.09.2026 02:25–02:38 UTC — §39. İŞİN YEKUNU: MÜSABİQƏ BİRİNCİ GÜN BİTİBMİŞ
+
+Müəlliflə DM söhbətinin qalan hissəsi hər şeyi bağlayır.
+
+### Cavab
+> **«Ah yes, it is fantastic hedwig.»**
+
+### Qalib biz deyilik
+> «Unfortunately you are not the winner, I only just today got permission to confirm a
+> winner exists. But congrats for solving it!»
+
+### ★ ƏN VACİB FAKT: tapmaca ilk 12 saatda həll olunub
+> **«It was solved VERY fast. Within the first 12 hours.** They have been doing legal
+> stuff and paperwork as far as I know.»
+
+Video **2 sentyabrda** yayımlanıb. Yəni qalib **elə həmin gün** müəyyən olunub.
+Bu sessiyanın bütün işi (3–17 sentyabr) **artıq bitmiş bir yarış** üzərində gedib.
+Nə mənim PEAHEN səhvim, nə də başqa bir şey nəticəyə təsir edə bilməzdi — mükafat
+biz başlamazdan əvvəl gedib.
+
+### Niyə forma açıq qaldı və elan gecikdi
+> «I assume you've noticed the website submission is still open — **that is Team Beast's
+> website, not mine.**»
+> «Also there was a federal holiday and they started a new $1M challenge with that James
+> Patterson book so I assume that also distracted them from announcing the winner.»
+
+Bu, sessiya boyu bizi ən çox yanıldan siqnalı izah edir: **açıq forma «cavab səhvdir»
+demək deyildi.** Mən §11283-də iki izah yazmışdım — (1) sponsor sadəcə elan etmir,
+(2) cavab səhvdir. **Birincisi doğru imiş, mən ikincisini seçdim.** HEDWIG-i məhz buna
+görə rədd etdim.
+
+### Müəllifin son sözləri
+> «Thank you for solving it! I'm glad you enjoyed it 😄»
+> «You can share the answer, yes. MrBeast will make an official announcement soon
+> (or maybe after they pay the winner).»
+
+→ Cavabı açıq paylaşmaq icazəlidir.
+
+### Yekun qiymət
+| nə | nəticə |
+|---|---|
+| Cavab | `FANTASTIC HEDWIG` ✓ |
+| Yapboz zənciri (27/27 hərf) | **düzgün** ✓ |
+| `FANTASTIC` | **düzgün** ✓ (müəllif təsdiqlədi) |
+| 15 simvol ölçüsü | **düzgün** ✓ |
+| Son 6 hərf | **səhv** ✗ — orijinal otaqdakı iki ipucu ilə tapılırmış |
+| Mükafat | başqasına gedib, 2 sentyabrda |
+
+6 saatlıq routine söndürüldü — sualı tam cavablandı.

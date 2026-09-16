@@ -3,8 +3,14 @@
 ## Answer: `FANTASTIC HEDWIG`
 
 Confirmed by the puzzle's author, u/DoctorXOR, by DM on 17 September 2026:
-*"Ah yes, it is fantastic hedwig."* He also confirmed the contest already has a winner
-(16 September, 18:28), with MrBeast to announce officially.
+*"Ah yes, it is fantastic hedwig."*
+
+**The contest closed on day one.** The author: *"It was solved VERY fast. Within the
+first 12 hours."* The video published 2 September; the winner was decided that day.
+The form stayed open afterwards only because it is Team Beast's site, not the author's,
+and the announcement is held up by legal paperwork, a federal holiday and the new
+$1,000,000 James Patterson book challenge. He has confirmed the answer may be shared
+publicly.
 
 **This handoff previously said `FANTASTICPEAHEN`. That was wrong.** The community had
 HEDWIG from 4 September; this repository retracted it and substituted a derivation of
