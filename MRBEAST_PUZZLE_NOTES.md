@@ -12423,3 +12423,34 @@ yazılacaq bir DM bağlaya bilər.
 ### 6 saatlıq routine-in yeni məqsədi
 Artıq «qalib varmı?» sualı bağlıdır. Bundan sonra yoxlanacaq tək şey: **rəsmi elan
 cavabı açıqlayırmı** — yəni `PEAHEN` doğru idimi.
+
+---
+
+## 16.09.2026 ~22:00Z — §37. EXOTIC vs PEAHEN — «exotic» videoda ÜMUMİYYƏTLƏ YOXDUR
+
+Başqa bir sessiya `FANTASTICEXOTIC` təklif edib (mod-un adı «Exotic Birds»).
+Dördüncü yükləmənin bütün mətn mənbələri yoxlandı:
+
+| mənbə | exotic | peahen |
+|---|---|---|
+| subtitr (507 söz) | 0 | 0 |
+| başlıq «More birds IN MINECRAFT!!» | 0 | 0 |
+| təsvir (3 sətir) | 0 | 0 |
+| teqlər `[birds, minecraft, in, more, must, see, epic]` | 0 | 0 |
+| **ekran** | **tapılmadı** | **2 dəfə** (hotbar adı + inventar tooltip-i) |
+
+Video birbaşa oyunun içində başlayır — mod siyahısı, başlıq ekranı, mod adı yoxdur
+(ilk 8 kadr yoxlanıldı). 250 kadrın tam skanında iri mətn yalnız inventar
+GUI-sindədir (kadr 107–119, 191–193) və orada çıxan adların heç biri «Exotic» deyil.
+
+**Nəticə:** EXOTIC videonun içində heç bir formada yoxdur; onu ancaq modu Google-layıb
+tapmaq olar. Colin «Google is always an option» dediyi üçün bu, tam rədd deyil — amma:
+
+1. Qırmızı yarı `FANTASTIC`-i *Fantastic **Beasts*** başlığından çıxarır → şablon
+   **sifət + canlı**-dır. `FANTASTIC PEAHEN` bunu təkrarlayır; `FANTASTIC EXOTIC`
+   **iki sifətdir**.
+2. Mod «Exotic **Birds**» adlanır — cavab mod adından gəlsəydi, EXOTIC-in BIRDS-dən
+   üstünlüyü əsaslandırılmır. PEAHEN isə ekrandakı tam, bölünməmiş bir addır.
+
+**PEAHEN daha güclü qalır, amma bu, sübut deyil.** Fərq yalnız müəllifin təsdiqi ilə
+bağlana bilər — o, DM ilə cavabı təsdiqləməyi təklif edib (§36).
