@@ -1,0 +1,254 @@
+Greater sooty owl|Tyto tenebricosa
+Lesser sooty owl|Tyto multipunctata
+Minahasa masked owl|Tyto inexspectata
+Taliabu masked owl|Tyto nigrobrunnea
+Moluccan masked owl|Tyto sororcula
+Manus masked owl|Tyto manusi
+Golden masked owl|Tyto aurantia
+Australian masked owl|Tyto novaehollandiae
+Sulawesi masked owl|Tyto rosenbergii
+Red owl|Tyto soumagnei
+Western barn owl|Tyto alba
+American barn owl|Tyto furcata
+Eastern barn owl|Tyto javanica
+Andaman masked owl|Tyto deroepstorffi
+Ashy-faced owl|Tyto glaucops
+African grass owl|Tyto capensis
+Eastern grass owl|Tyto longimembris
+Itombwe owl|Tyto prigoginei
+Oriental bay owl|Phodilus badius
+Sri Lanka bay owl|Phodilus assimilis
+Papuan hawk-owl|Uroglaux dimorpha
+Laughing owl|Ninox albifacies
+Rufous owl|Ninox rufa
+Powerful owl|Ninox strenua
+Barking owl|Ninox connivens
+Sumba boobook|Ninox rudolfi
+Australian boobook|Ninox boobook
+Rote boobook|Ninox rotiensis
+Timor boobook|Ninox fusca
+Alor boobook|Ninox plesseni
+Tasmanian boobook|Ninox leucopsis
+Morepork|Ninox novaeseelandiae
+Northern boobook|Ninox japonica
+Brown boobook|Ninox scutulata
+Hume's boobook|Ninox obscura
+Chocolate boobook|Ninox randi
+Andaman boobook|Ninox affinis
+Luzon boobook|Ninox philippensis
+Mindanao boobook|Ninox spilocephala
+Camiguin boobook|Ninox leventisi
+Sulu boobook|Ninox reyi
+Cebu boobook|Ninox rumseyi
+Romblon boobook|Ninox spilonotus
+Mindoro boobook|Ninox mindorensis
+Least boobook|Ninox sumbaensis
+Togian boobook|Ninox burhani
+Ochre-bellied boobook|Ninox ochracea
+Cinnabar boobook|Ninox ios
+Halmahera boobook|Ninox hypogramma
+Buru boobook|Ninox hantu
+Seram boobook|Ninox squamipila
+Tanimbar boobook|Ninox forbesi
+Christmas boobook|Ninox natalis
+Manus boobook|Ninox meeki
+Papuan boobook|Ninox theomacha
+Speckled boobook|Ninox punctulata
+New Britain boobook|Ninox odiosa
+New Ireland boobook|Ninox variegata
+Bare-legged owl|Margarobyas lawrencii
+Collared owlet|Taenioptynx brodiei
+Sunda owlet|Taenioptynx sylvaticus
+Elf owl|Micrathene whitneyi
+Long-whiskered owlet|Xenoglaux loweryi
+Boreal owl|Aegolius funereus
+Northern saw-whet owl|Aegolius acadicus
+Bermuda saw-whet owl|Aegolius gradyi
+Unspotted saw-whet owl|Aegolius ridgwayi
+Buff-fronted owl|Aegolius harrisii
+Forest owlet|Athene blewitti
+White-browed owl|Athene superciliaris
+Burrowing owl|Athene cunicularia
+Little owl|Athene noctua
+Spotted owlet|Athene brama
+West Solomons owl|Athene jacquinoti
+Guadalcanal owl|Athene granti
+Malaita owl|Athene malaitae
+Makira owl|Athene roseoaxillaris
+Northern hawk-owl|Surnia ulula
+Eurasian pygmy owl|Glaucidium passerinum
+Pearl-spotted owlet|Glaucidium perlatum
+Red-chested owlet|Glaucidium tephronotum
+Sjostedt's barred owlet|Glaucidium sjostedti
+Asian barred owlet|Glaucidium cuculoides
+Javan owlet|Glaucidium castanopterum
+Jungle owlet|Glaucidium radiatum
+Chestnut-backed owlet|Glaucidium castanotum
+African barred owlet|Glaucidium capense
+Albertine owlet|Glaucidium albertinum
+Northern pygmy owl|Glaucidium californicum
+Mountain pygmy owl|Glaucidium gnoma
+Baja pygmy owl|Glaucidium hoskinsii
+Guatemalan pygmy owl|Glaucidium cobanense
+Costa Rican pygmy owl|Glaucidium costaricanum
+Cloud-forest pygmy owl|Glaucidium nubicola
+Andean pygmy owl|Glaucidium jardinii
+Yungas pygmy owl|Glaucidium bolivianum
+Colima pygmy owl|Glaucidium palmarum
+Tamaulipas pygmy owl|Glaucidium sanchezi
+Central American pygmy owl|Glaucidium griseiceps
+Subtropical pygmy owl|Glaucidium parkeri
+Amazonian pygmy owl|Glaucidium hardyi
+East Brazilian pygmy owl|Glaucidium minutissimum
+Pernambuco pygmy owl|Glaucidium mooreorum
+Ferruginous pygmy owl|Glaucidium brasilianum
+Pacific pygmy owl|Glaucidium peruanum
+Austral pygmy owl|Glaucidium nana
+Cuban pygmy owl|Glaucidium siju
+Giant scops owl|Otus gurneyi
+White-fronted scops owl|Otus sagittatus
+Reddish scops owl|Otus rufescens
+Serendib scops owl|Otus thilohoffmanni
+Sandy scops owl|Otus icterorhynchus
+Sokoke scops owl|Otus ireneae
+Andaman scops owl|Otus balli
+Flores scops owl|Otus alfredi
+Mountain scops owl|Otus spilocephalus
+Javan scops owl|Otus angelinae
+Mindanao scops owl|Otus mirus
+Luzon scops owl|Otus longicornis
+Mindoro scops owl|Otus mindorensis
+Torotoroka scops owl|Otus madagascariensis
+Rainforest scops owl|Otus rutilus
+Mayotte scops owl|Otus mayottensis
+Karthala scops owl|Otus pauliani
+Anjouan scops owl|Otus capnodes
+Moheli scops owl|Otus moheliensis
+Reunion scops owl|Otus grucheti
+Mauritius scops owl|Otus sauzieri
+Rodrigues scops owl|Otus murivorus
+Pallid scops owl|Otus brucei
+Arabian scops owl|Otus pamelae
+Eurasian scops owl|Otus scops
+Cyprus scops owl|Otus cyprius
+Principe scops owl|Otus bikegila
+Pemba scops owl|Otus pembaensis
+Sao Tome scops owl|Otus hartlaubi
+African scops owl|Otus senegalensis
+Annobon scops owl|Otus feae
+Socotra scops owl|Otus socotranus
+Oriental scops owl|Otus sunia
+Ryukyu scops owl|Otus elegans
+Moluccan scops owl|Otus magicus
+Wetar scops owl|Otus tempestatis
+Sula scops owl|Otus sulaensis
+Biak scops owl|Otus beccarii
+Sulawesi scops owl|Otus manadensis
+Banggai scops owl|Otus mendeni
+Siau scops owl|Otus siaoensis
+Sangihe scops owl|Otus collari
+Mantanani scops owl|Otus mantananensis
+Seychelles scops owl|Otus insularis
+Nicobar scops owl|Otus alius
+Simeulue scops owl|Otus umbra
+Enggano scops owl|Otus enganensis
+Mentawai scops owl|Otus mentawi
+Rajah scops owl|Otus brookii
+Indian scops owl|Otus bakkamoena
+Collared scops owl|Otus lettia
+Japanese scops owl|Otus semitorques
+Sunda scops owl|Otus lempiji
+Philippine scops owl|Otus megalotis
+Negros scops owl|Otus nigrorum
+Everett's scops owl|Otus everetti
+Palawan scops owl|Otus fuliginosus
+Wallace's scops owl|Otus silvicola
+Rinjani scops owl|Otus jolandae
+Palau scops owl|Otus podarginus
+Northern white-faced owl|Ptilopsis leucotis
+Southern white-faced owl|Ptilopsis granti
+Jamaican owl|Asio grammicus
+Striped owl|Asio clamator
+Long-eared owl|Asio otus
+Abyssinian owl|Asio abyssinicus
+Madagascar owl|Asio madagascariensis
+Stygian owl|Asio stygius
+Short-eared owl|Asio flammeus
+Marsh owl|Asio capensis
+Fearful owl|Asio solomonensis
+Maned owl|Jubula lettii
+Snowy owl|Bubo scandiacus
+Great horned owl|Bubo virginianus
+Lesser horned owl|Bubo magellanicus
+Eurasian eagle-owl|Bubo bubo
+Indian eagle-owl|Bubo bengalensis
+Pharaoh eagle-owl|Bubo ascalaphus
+Cape eagle-owl|Bubo capensis
+Arabian eagle-owl|Bubo milesi
+Greyish eagle-owl|Bubo cinerascens
+Spotted eagle-owl|Bubo africanus
+Fraser's eagle-owl|Ketupa poensis
+Akun eagle-owl|Ketupa leucosticta
+Verreaux's eagle-owl|Ketupa lactea
+Shelley's eagle-owl|Ketupa shelleyi
+Blakiston's fish owl|Ketupa blakistoni
+Brown fish owl|Ketupa zeylonensis
+Tawny fish owl|Ketupa flavipes
+Buffy fish owl|Ketupa ketupu
+Barred eagle-owl|Ketupa sumatrana
+Spot-bellied eagle-owl|Ketupa nipalensis
+Dusky eagle-owl|Ketupa coromanda
+Philippine eagle-owl|Ketupa philippensis
+Pel's fishing owl|Scotopelia peli
+Rufous fishing owl|Scotopelia ussheri
+Vermiculated fishing owl|Scotopelia bouvieri
+Flammulated owl|Psiloscops flammeolus
+Puerto Rican owl|Gymnasio nudipes
+Whiskered screech owl|Megascops trichopsis
+Bare-shanked screech owl|Megascops clarkii
+White-throated screech owl|Megascops albogularis
+Tropical screech owl|Megascops choliba
+Bearded screech owl|Megascops barbarus
+Pacific screech owl|Megascops cooperi
+Western screech owl|Megascops kennicottii
+Eastern screech owl|Megascops asio
+Balsas screech owl|Megascops seductus
+Middle American screech owl|Megascops guatemalae
+Koepcke's screech owl|Megascops koepckeae
+Rufescent screech owl|Megascops ingens
+Cinnamon screech owl|Megascops petersoni
+Cloud-forest screech owl|Megascops marshalli
+Yungas screech owl|Megascops hoyi
+Choco screech owl|Megascops centralis
+Foothill screech owl|Megascops roraimae
+Long-tufted screech owl|Megascops sanctaecatarinae
+Santa Marta screech owl|Megascops gilesi
+West Peruvian screech owl|Megascops roboratus
+Tawny-bellied screech owl|Megascops watsonii
+Black-capped screech owl|Megascops atricapilla
+Spectacled owl|Pulsatrix perspicillata
+Tawny-browed owl|Pulsatrix koeniswaldiana
+Band-bellied owl|Pulsatrix melanota
+Crested owl|Lophostrix cristata
+Spotted wood owl|Strix seloputo
+Mottled wood owl|Strix ocellata
+Brown wood owl|Strix leptogrammica
+Tawny owl|Strix aluco
+Maghreb owl|Strix mauritanica
+Himalayan owl|Strix nivicolum
+Desert owl|Strix hadorami
+Omani owl|Strix butleri
+Spotted owl|Strix occidentalis
+Barred owl|Strix varia
+Cinereous owl|Strix sartorii
+Fulvous owl|Strix fulvescens
+Rusty-barred owl|Strix hylophila
+Chaco owl|Strix chacoensis
+Rufous-legged owl|Strix rufipes
+Ural owl|Strix uralensis
+Great grey owl|Strix nebulosa
+African wood owl|Strix woodfordii
+Mottled owl|Strix virgata
+Black-and-white owl|Strix nigrolineata
+Black-banded owl|Strix huhula
+Rufous-banded owl|Strix albitarsis
