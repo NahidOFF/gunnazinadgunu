@@ -56,7 +56,9 @@ def main():
             voices.append({"id": l["id"], "t": round(at, 3), "speaker": l["speaker"], "kind": l.get("kind", "speech"), "dur": l["_d"]})
             if l.get("tr"):
                 style = {"thought": "thought", "narration": "narration"}.get(l.get("kind"), "speech")
-                subs.append({"t0": round(at, 3), "t1": round(at + max(l["_d"] + 0.25, 0.9 + len(l["tr"]) / 17.0), 3),
+                t1 = at + max(l["_d"] + 0.25, 0.9 + len(l["tr"]) / 17.0)
+                t1 = min(t1, t + sh["dur"] + 0.8)  # do not linger far into the next shot
+                subs.append({"t0": round(at, 3), "t1": round(t1, 3),
                              "text": l["tr"], "style": style, "top": style == "narration", "speaker": l["speaker"]})
         for s in sh.get("sfx", []):
             sfx.append({"name": s["name"], "t": round(t + float(s.get("t", 0)), 3), "gain": float(s.get("gain", 1.0))})

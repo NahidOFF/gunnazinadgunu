@@ -437,8 +437,8 @@ class Renderer:
                     m = ((hch > 35) & (hch < 85) & (s > 90) & (v > 120)).astype(np.float32)
                     col = np.array([0.45, 1.0, 0.4], np.float32)
                 else:
-                    m = (v > 200).astype(np.float32)
-                    col = np.array([1.0, 1.0, 1.0], np.float32)
+                    m = ((v > 238) & (s < 60)).astype(np.float32) * 0.5
+                    col = np.array([0.8, 0.85, 1.0], np.float32)
                 g = cv2.GaussianBlur(m, (0, 0), 6) * 1.2 + cv2.GaussianBlur(m, (0, 0), 18) * 1.6
                 g = cv2.resize(g, (W, H), interpolation=cv2.INTER_LINEAR)
                 pulse = 0.75 + 0.25 * math.sin(t * fx.get("rate", 7)) + 0.15 * hash_noise(3, t, 14)

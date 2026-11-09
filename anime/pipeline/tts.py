@@ -47,14 +47,14 @@ def post(model, body, timeout=180):
         return None, {"error": {"code": 0, "message": str(e)}}
 
 
-def synth(text, voice, style):
-    prompt = f"{style}\n{text}"
+def synth(text, voice, style, models=None):
+    prompt = style.replace("{TEXT}", text)
     body = {"contents": [{"parts": [{"text": prompt}]}],
-            "generationConfig": {"responseModalities": ["AUDIO"],
+            "generationConfig": {"responseModalities": ["AUDIO"], "temperature": 0.7,
                                  "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice}}}}}
     last = None
     for attempt in range(8):
-        for m in TTS_MODELS:
+        for m in (models or TTS_MODELS):
             d, err = post(m, body)
             if d and "candidates" in d:
                 for p in d["candidates"][0].get("content", {}).get("parts", []):
@@ -67,9 +67,23 @@ def synth(text, voice, style):
             if code in (429, 503, 500, 0, -1):
                 continue  # try next model
             if code == 400:
-                break
+                continue
         time.sleep(min(60, 8 * (attempt + 1)))
     raise RuntimeError(f"TTS failed: {last}")
+
+
+def style_prompt(persona, direction):
+    return ("# AUDIO PROFILE\n" + persona + "\n"
+            "## DIRECTOR'S NOTES\n"
+            "Performance: " + (direction or "natural") + "\n"
+            "Language: Japanese. Read ONLY the transcript below, exactly as written, once. "
+            "Do not add, change, translate or continue any words. Short interjections stay short.\n"
+            "#### TRANSCRIPT\n{TEXT}")
+
+
+def expected_dur(ja):
+    n = len(norm(ja))
+    return 0.35 + n * 0.16
 
 
 def transcribe(wav_path):
@@ -122,28 +136,33 @@ def main():
         if os.path.exists(out) and not want and report.get(lid, {}).get("ok"):
             continue
         voice, persona = CAST.get(l["speaker"], CAST["Narration"])
-        style = (f"You are voice acting {persona}. Performance direction: {l.get('direction', '')}. "
-                 f"Speak ONLY the following Japanese line, in natural native Japanese, nothing else:")
+        style = style_prompt(persona, l.get("direction", ""))
+        exp = expected_dur(l["ja"])
+        short = len(norm(l["ja"])) <= 4
         best = None
-        for take in range(3):
+        for take in range(5):
             raw, model = synth(l["ja"], voice, style)
             tmp = out + f".take{take}.wav"
             to_wav(raw, tmp)
-            heard = transcribe(tmp)
-            sc = similar(heard, l["ja"]) if heard is not None else 0.5
             dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", tmp], capture_output=True, text=True).stdout or 0)
-            print(f"{lid} take{take} {model} score={sc:.2f} dur={dur:.1f}s heard={heard!r}", flush=True)
+            heard = transcribe(tmp) if dur < exp * 3 + 2.5 else "(too long)"
+            sc = similar(heard, l["ja"]) if heard is not None else 0.0
+            if dur > exp * 3 + 2.5:
+                sc = 0.0
+            if short and heard is not None and len(norm(heard)) > len(norm(l["ja"])) + 4:
+                sc = min(sc, 0.2)  # model improvised extra words
+            print(f"{lid} take{take} {model} score={sc:.2f} dur={dur:.1f}s exp={exp:.1f}s heard={heard!r}", flush=True)
             if best is None or sc > best[0]:
                 best = (sc, tmp, heard, model, dur)
-            if sc >= 0.8 or len(norm(l["ja"])) <= 3:
+            if sc >= (0.5 if short else 0.8):
                 break
-            time.sleep(4)
+            time.sleep(3)
         os.replace(best[1], out)
-        for t in range(3):
+        for t in range(5):
             p = out + f".take{t}.wav"
             if os.path.exists(p):
                 os.remove(p)
-        report[lid] = {"ok": best[0] >= 0.6, "score": round(best[0], 3), "heard": best[2], "model": best[3], "dur": best[4], "ja": l["ja"]}
+        report[lid] = {"ok": best[0] >= (0.5 if short else 0.6), "score": round(best[0], 3), "heard": best[2], "model": best[3], "dur": best[4], "ja": l["ja"]}
         json.dump(report, open(report_path, "w"), ensure_ascii=False, indent=1)
         time.sleep(2)
 

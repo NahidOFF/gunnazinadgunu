@@ -18,7 +18,7 @@ B = os.path.join(ROOT, "build")
 SR = 48000
 
 VOICE_FX = {
-    "Wolf": "asetrate=24000*0.86,aresample=24000,atempo=1.08,bass=g=4,aecho=0.8:0.6:60|120:0.35|0.2",
+    "Wolf": "asetrate={SR}*0.93,aresample={SR},atempo=1.04,bass=g=5,aecho=0.8:0.6:60|120:0.35|0.2",
     "Narration": "aecho=0.8:0.5:40:0.15,equalizer=f=200:t=q:w=1:g=2",
     "Clone": "aecho=0.8:0.7:35|70:0.35|0.25,highpass=f=150",
 }
@@ -53,6 +53,8 @@ def processed_voice(v):
     if not os.path.exists(src):
         return None
     fx = VOICE_FX.get(v["speaker"])
+    if fx:
+        fx = fx.replace("{SR}", str(sf.info(src).samplerate))
     if v["kind"] == "thought":
         fx = (fx + "," if fx else "") + THOUGHT_FX
     if v["kind"] == "whisper":
