@@ -2,3 +2,5 @@ build/
 output/
 *.env
 .env
+__pycache__/
+*.pyc
