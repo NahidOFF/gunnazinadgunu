@@ -632,8 +632,8 @@ class Renderer:
                 frame = cv2.filter2D(mix, -1, ker)
         # subtitles
         for sub in self.tl.get("subs", []):
-            if sub["t0"] - 0.12 <= t <= sub["t1"] + 0.12:
-                a = min(1, (t - (sub["t0"] - 0.12)) / 0.12, ((sub["t1"] + 0.12) - t) / 0.12)
+            if sub["t0"] <= t <= sub["t1"]:
+                a = min(1, (t - sub["t0"]) / 0.1, (sub["t1"] - t) / 0.1)
                 frame = np.clip(frame, 0, 1)
                 frame = self.subs.draw(frame, sub["text"], sub.get("style", "speech"), max(0, a), top=sub.get("top", False))
         frame = self.grade(frame, fidx, self.tl.get("look", {}))
