@@ -32,7 +32,7 @@ def main():
     dec = subprocess.Popen(["ffmpeg", "-loglevel", "error", "-i", os.path.join(B, "video_noaudio.mp4"),
                             "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE, bufsize=W * H * 3 * 4)
     a = ["-c:a", "aac", "-b:a", "192k", "-metadata:s:a:0", "language=jpn",
-         "-c:s", "mov_text", "-metadata:s:s:0", "language=tur", "-movflags", "+faststart", "-shortest"]
+         "-c:s", "mov_text", "-metadata:s:s:0", "language=tur", "-movflags", "+faststart", "-t", f"{total / fps:.3f}"]
     enc = subprocess.Popen(
         ["ffmpeg", "-loglevel", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-",
          "-i", os.path.join(B, "mix.wav"), "-i", os.path.join(OUT, "altyazi_tr.srt"),
