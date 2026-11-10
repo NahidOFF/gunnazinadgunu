@@ -35,7 +35,7 @@ def kana(s):
 def main():
     import torch
     from transformers import WhisperForConditionalGeneration, WhisperProcessor
-    torch.set_num_threads(2)
+    torch.set_num_threads(4)
     name = "openai/whisper-small"
     proc = WhisperProcessor.from_pretrained(name)
     model = WhisperForConditionalGeneration.from_pretrained(name).eval()

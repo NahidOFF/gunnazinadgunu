@@ -63,8 +63,19 @@ def processed_voice(v):
         return load(src)
     os.makedirs(os.path.join(B, "voice_fx"), exist_ok=True)
     dst = os.path.join(B, "voice_fx", v["id"] + ".wav")
+    if v["speaker"] == "Wolf":
+        # monstrous layer: main voice + an octave-down, low-passed double + sub boost
+        sr = sf.info(src).samplerate
+        graph = (f"[0:a]asplit=2[a][b];[a]{fx}[main];"
+                 f"[b]asetrate={sr}*0.62,aresample={sr},atempo=1.6129,lowpass=f=700,volume=0.55[low];"
+                 f"[main][low]amix=inputs=2:normalize=0,equalizer=f=80:t=q:w=1:g=5,"
+                 f"aecho=0.8:0.5:90:0.25,apad=pad_dur=1.2[out]")
+        subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", src, "-filter_complex", graph, "-map", "[out]", dst], check=True)
+        x = load(dst)
+        return x / (np.abs(x).max() + 1e-9) * 0.95
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", src, "-af", fx + ",apad=pad_dur=1.2", dst], check=True)
-    return load(dst)
+    x = load(dst)
+    return x / (np.abs(x).max() + 1e-9) * 0.9
 
 
 def music_track(events, dur):
