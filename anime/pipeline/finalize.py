@@ -1,9 +1,7 @@
-"""Patch small re-rendered windows into the master render and make delivery encodes.
-
-- re-renders every window in build/fix_windows.json (frame-accurate, padded)
-- splices them into build/video_noaudio.mp4 via a trim/concat filter graph
-- muxes the latest build/mix.wav and soft Turkish subtitles
-- writes output/<name>_1080p.mp4 and output/<name>_720p.mp4 in one decode pass
+"""Deliver the episode: stream the master render frame by frame, replace the
+frames inside build/fix_windows.json with freshly rendered ones, and encode
+1080p + 720p in one pass (constant memory), muxing build/mix.wav and soft
+Turkish subtitles.
 """
 import json
 import math
@@ -11,66 +9,59 @@ import os
 import subprocess
 import sys
 
+import numpy as np
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 B = os.path.join(ROOT, "build")
 OUT = os.path.join(ROOT, "output")
 NAME = "dogaun_disi_anime"
+sys.path.insert(0, os.path.join(ROOT, "pipeline"))
 
 
 def main():
+    from render import Renderer
     tl = json.load(open(os.path.join(B, "timeline.json")))
-    fps = tl["fps"]
+    W, H, fps = tl["width"], tl["height"], tl["fps"]
     total = int(math.ceil(tl["duration"] * fps))
     wins = json.load(open(os.path.join(B, "fix_windows.json"))) if os.path.exists(os.path.join(B, "fix_windows.json")) else []
-    ranges = sorted((max(0, int(w[0] * fps) - 12), min(total, int(math.ceil(w[1] * fps)) + 12)) for w in wins)
-    merged = []
-    for a, b in ranges:
-        if merged and a <= merged[-1][1]:
-            merged[-1][1] = max(merged[-1][1], b)
-        else:
-            merged.append([a, b])
-    os.makedirs(os.path.join(B, "fix"), exist_ok=True)
-    fixes = []
-    for i, (a, b) in enumerate(merged):
-        p = os.path.join(B, "fix", f"w{i:02d}.mp4")
-        subprocess.run([sys.executable, os.path.join(ROOT, "pipeline", "render.py"), os.path.join(B, "timeline.json"), p,
-                        "--from", str(a), "--to", str(b), "--crf", "10"], check=True, stdout=subprocess.DEVNULL)
-        fixes.append((a, b, p))
-        print("patched window", a, b, flush=True)
-    inputs = ["-i", os.path.join(B, "video_noaudio.mp4")]
-    for _, _, p in fixes:
-        inputs += ["-i", p]
-    inputs += ["-i", os.path.join(B, "mix.wav")]
-    audio_idx = 1 + len(fixes)
-    parts, cur, k = [], 0, 0
-    graph = []
-    for i, (a, b, _) in enumerate(fixes):
-        graph.append(f"[0:v]trim=start_frame={cur}:end_frame={a},setpts=PTS-STARTPTS[m{k}]")
-        parts.append(f"[m{k}]")
-        k += 1
-        graph.append(f"[{i + 1}:v]setpts=PTS-STARTPTS[f{i}]")
-        parts.append(f"[f{i}]")
-        cur = b
-    graph.append(f"[0:v]trim=start_frame={cur},setpts=PTS-STARTPTS[m{k}]")
-    parts.append(f"[m{k}]")
-    graph.append("".join(parts) + f"concat=n={len(parts)}:v=1:a=0,split=2[v1][v2]")
-    graph.append("[v2]scale=1280:720:flags=lanczos[v720]")
-    srt = os.path.join(OUT, "altyazi_tr.srt")
+    patch = set()
+    for w in wins:
+        patch.update(range(max(0, int(w[0] * fps) - 6), min(total, int(math.ceil(w[1] * fps)) + 6)))
+    R = Renderer(tl)
     os.makedirs(OUT, exist_ok=True)
-    common_a = ["-c:a", "aac", "-b:a", "192k", "-metadata:s:a:0", "language=jpn"]
-    sub_in = ["-i", srt]
-    sub_idx = audio_idx + 1
-    cmd = ["ffmpeg", "-loglevel", "error", "-stats", "-y", *inputs, *sub_in, "-filter_complex", ";".join(graph),
-           "-map", "[v1]", "-map", f"{audio_idx}:a", "-map", f"{sub_idx}:s",
-           "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-maxrate", "5M", "-bufsize", "10M", "-pix_fmt", "yuv420p",
-           *common_a, "-c:s", "mov_text", "-metadata:s:s:0", "language=tur", "-movflags", "+faststart", "-shortest",
-           os.path.join(OUT, f"{NAME}_1080p.mp4"),
-           "-map", "[v720]", "-map", f"{audio_idx}:a", "-map", f"{sub_idx}:s",
-           "-c:v", "libx264", "-preset", "medium", "-crf", "22", "-maxrate", "2.5M", "-bufsize", "5M", "-pix_fmt", "yuv420p",
-           *common_a, "-c:s", "mov_text", "-metadata:s:s:0", "language=tur", "-movflags", "+faststart", "-shortest",
-           os.path.join(OUT, f"{NAME}_720p.mp4")]
-    subprocess.run(cmd, check=True)
-    print("done")
+    dec = subprocess.Popen(["ffmpeg", "-loglevel", "error", "-i", os.path.join(B, "video_noaudio.mp4"),
+                            "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE, bufsize=W * H * 3 * 4)
+    a = ["-c:a", "aac", "-b:a", "192k", "-metadata:s:a:0", "language=jpn",
+         "-c:s", "mov_text", "-metadata:s:s:0", "language=tur", "-movflags", "+faststart", "-shortest"]
+    enc = subprocess.Popen(
+        ["ffmpeg", "-loglevel", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-",
+         "-i", os.path.join(B, "mix.wav"), "-i", os.path.join(OUT, "altyazi_tr.srt"),
+         "-filter_complex", "[0:v]split=2[v1][v2];[v2]scale=1280:720:flags=lanczos[v720]",
+         "-map", "[v1]", "-map", "1:a", "-map", "2:s", "-c:v", "libx264", "-preset", "medium", "-crf", "20",
+         "-maxrate", "5M", "-bufsize", "10M", "-pix_fmt", "yuv420p", "-x264-params", "threads=3", *a,
+         os.path.join(OUT, f"{NAME}_1080p.mp4"),
+         "-map", "[v720]", "-map", "1:a", "-map", "2:s", "-c:v", "libx264", "-preset", "medium", "-crf", "22",
+         "-maxrate", "2.5M", "-bufsize", "5M", "-pix_fmt", "yuv420p", "-x264-params", "threads=2", *a,
+         os.path.join(OUT, f"{NAME}_720p.mp4")],
+        stdin=subprocess.PIPE)
+    n = W * H * 3
+    f = 0
+    while True:
+        buf = dec.stdout.read(n)
+        if len(buf) < n:
+            break
+        if f in patch:
+            buf = R.frame_at(f).tobytes()
+        enc.stdin.write(buf)
+        f += 1
+        if f % 1200 == 0:
+            print(f"{f}/{total}", flush=True)
+    enc.stdin.close()
+    enc.wait()
+    dec.wait()
+    print("done", f, "frames; patched", len(patch), "returncode", enc.returncode)
+    if enc.returncode:
+        sys.exit(1)
 
 
 if __name__ == "__main__":
